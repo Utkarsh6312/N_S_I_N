@@ -1,0 +1,61 @@
+/* content.css - Highlight Styles for NSIN Extension */
+
+.nsin-highlight-danger {
+  background-color: rgba(255, 0, 0, 0.2) !important;
+  border-bottom: 2px dashed #ff0040 !important;
+  color: #ff0040 !important;
+  font-weight: bold !important;
+  position: relative;
+  cursor: help;
+  transition: all 0.2s ease-in-out;
+}
+
+.nsin-highlight-danger:hover {
+  background-color: rgba(255, 0, 0, 0.4) !important;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+.nsin-tooltip {
+  visibility: hidden;
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #040814;
+  color: white;
+  border: 1px solid #ff0040;
+  box-shadow: 0px 4px 15px rgba(255, 0, 64, 0.4);
+  padding: 10px;
+  border-radius: 6px;
+  width: 250px;
+  font-size: 12px;
+  font-family: sans-serif;
+  z-index: 999999;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.nsin-highlight-danger:hover .nsin-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nsin-tooltip-title {
+  color: #ff0040;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.nsin-tooltip-score {
+  display: inline-block;
+  background-color: #ff0040;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  margin-top: 5px;
+}
