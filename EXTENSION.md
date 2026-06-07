@@ -142,6 +142,7 @@ The `manifest.json` is structured for minimal privilege and maximum security:
 ---
 
 ## 9. Future Roadmap
+//Less go
 
 - **Q4 2026: Machine Learning On-Device**: Implement TensorFlow.js models directly within the extension for zero-latency, offline phishing detection based on page visual structure and text analysis.
 - **Q1 2027: Enterprise Version**: Release an admin-managed version via Chrome Enterprise policies, allowing IT administrators to set custom blocklists and receive organizational threat reports.
